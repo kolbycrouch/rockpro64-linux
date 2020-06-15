@@ -1,0 +1,20 @@
+--- arch/arm64/boot/dts/rockchip/rk3328.dtsi
++++ arch/arm64/boot/dts/rockchip/rk3328.dtsi
+@@ -866,7 +883,7 @@
+ 		status = "disabled";
+ 	};
+ 
+-	sdio: dwmmc@ff510000 {
++	sdio: mmc@ff510000 {
+ 		compatible = "rockchip,rk3328-dw-mshc", "rockchip,rk3288-dw-mshc";
+ 		reg = <0x0 0xff510000 0x0 0x4000>;
+ 		interrupts = <GIC_SPI 13 IRQ_TYPE_LEVEL_HIGH>;
+@@ -878,7 +895,7 @@
+ 		status = "disabled";
+ 	};
+ 
+-	emmc: dwmmc@ff520000 {
++	emmc: mmc@ff520000 {
+ 		compatible = "rockchip,rk3328-dw-mshc", "rockchip,rk3288-dw-mshc";
+ 		reg = <0x0 0xff520000 0x0 0x4000>;
+ 		interrupts = <GIC_SPI 14 IRQ_TYPE_LEVEL_HIGH>;

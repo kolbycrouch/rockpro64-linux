@@ -108,6 +108,7 @@ static const struct of_device_id blacklist[] __initconst = {
 	{ .compatible = "fsl,imx8mq", },
 	{ .compatible = "fsl,imx8mm", },
 	{ .compatible = "fsl,imx8mn", },
+	{ .compatible = "fsl,imx8mp", },
 
 	{ .compatible = "marvell,armadaxp", },
 
@@ -138,6 +139,11 @@ static const struct of_device_id blacklist[] __initconst = {
 	{ .compatible = "ti,am43", },
 	{ .compatible = "ti,dra7", },
 	{ .compatible = "ti,omap3", },
+
+	{ .compatible = "qcom,ipq8064", },
+	{ .compatible = "qcom,apq8064", },
+	{ .compatible = "qcom,msm8974", },
+	{ .compatible = "qcom,msm8960", },
 
 	{ }
 };
